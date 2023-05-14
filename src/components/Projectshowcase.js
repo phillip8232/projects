@@ -71,7 +71,7 @@ export function Projectshowcase() {
         {console.log(data)}
       <h1>Game Projects</h1>
       {data ? (
-        <Carousel interval={5000} indicators={false}>
+        <Carousel interval={5000 - (100 * data.length)} indicators={false}>
           {slides}
         </Carousel>
       ) : (
