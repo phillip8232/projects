@@ -46,7 +46,7 @@ export function Navigationbar() {
                   <Card.Title>AKA - {data ? data.username : <> loading... </>}</Card.Title>
                   <Card.Subtitle className="mb-2 text-muted">DISCORD NAME GOES HERE</Card.Subtitle>
                   <Card.Text>
-                    DESCRIPTION OF WHAT I DO GOES HERE
+                    DESCRIPTION OF WHAT I DO GOES HERE / WHO I AM
                   </Card.Text>
                   <Card.Link href={data ? data.url : null}>ITCH.IO PAGE</Card.Link>
                   <Card.Link href="https://github.com/phillip8232">GITHUB PAGE</Card.Link>
