@@ -2,3 +2,13 @@
   border: none;
   --bs-dropdown-bg: none;
 }
+
+.project-item{
+  color: transparent;
+  background-color: none;
+}
+
+.project-item:hover{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}

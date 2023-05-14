@@ -4,6 +4,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Carousel from 'react-bootstrap/Carousel';
+import Card  from 'react-bootstrap/Card';
+import '../App.css';
 
 import axios from 'axios';
 
@@ -38,11 +40,24 @@ export function Projectshowcase() {
     const endIndex = Math.min(startIndex + 3, numItems);
     const slideData = data ? data.slice(startIndex, endIndex) : [];
     const slide = (
-      <Carousel.Item key={i}>
+        <Carousel.Item key={i}>
         <Row>
           {slideData.map((el) => (
             <Col key={el.id}>
-              <img src={el.cover_url} alt={el.title} style={{ maxWidth: '100%', height: 'auto' }} />
+              <Card>
+                <a href={`${el.url}`}>
+                  <Card.Img
+                    variant="top"
+                    src={el.cover_url}
+                    alt={el.title}
+                    style={{ maxWidth: '100%', height: 'auto' }}
+                  />
+                  <Card.ImgOverlay className="project-item">
+                    <Card.Title className="d-none d-sm-block">{el.title}</Card.Title>
+                    <Card.Text className="d-none d-sm-block" style={{ fontSize: '14px' }}>{el.short_text}</Card.Text>
+                  </Card.ImgOverlay>
+                </a>
+              </Card>
             </Col>
           ))}
         </Row>
@@ -53,6 +68,7 @@ export function Projectshowcase() {
   
   return (
     <Container style={{ paddingTop: "40px" }} fluid="md">
+        {console.log(data)}
       <h1>Projects</h1>
       {data ? (
         <Carousel interval={5000} indicators={false}>
