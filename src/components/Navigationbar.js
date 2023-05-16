@@ -44,9 +44,9 @@ export function Navigationbar() {
               <Card style={{ width: '20rem' }}>
                 <Card.Body>
                   <Card.Title>AKA - {data ? data.username : <Spinner animation="border" size="sm" />}</Card.Title>
-                  <Card.Subtitle className="mb-2 text-muted">DISCORD NAME GOES HERE</Card.Subtitle>
+                  <Card.Subtitle className="mb-2 text-muted">Deviantart - Xell8232</Card.Subtitle>
                   <Card.Text>
-                    DESCRIPTION OF WHAT I DO GOES HERE / WHO I AM
+                       Can't be the best, but what stops me from trying.
                   </Card.Text>
                   <Card.Link href={data ? data.url : null}>ITCHIO PAGE</Card.Link>
                   <Card.Link href="https://github.com/phillip8232">GITHUB PAGE</Card.Link>
