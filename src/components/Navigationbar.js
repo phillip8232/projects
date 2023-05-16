@@ -48,7 +48,7 @@ export function Navigationbar() {
                   <Card.Text>
                     DESCRIPTION OF WHAT I DO GOES HERE / WHO I AM
                   </Card.Text>
-                  <Card.Link href={data ? data.url : null}>ITCH.IO PAGE</Card.Link>
+                  <Card.Link href={data ? data.url : null}>ITCHIO PAGE</Card.Link>
                   <Card.Link href="https://github.com/phillip8232">GITHUB PAGE</Card.Link>
                 </Card.Body>
               </Card>

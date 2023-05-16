@@ -68,7 +68,6 @@ export function Projectshowcase() {
   
   return (
     <Container style={{ paddingTop: "40px" }} fluid="md">
-        {console.log(data)}
       <h1>Game Projects</h1>
       {data ? (
         <Carousel interval={5000 - (100 * data.length)} indicators={false}>
